@@ -67,7 +67,7 @@ int main () {
     close(STDIN_FILENO);
     close(STDOUT_FILENO);
     close(STDERR_FILENO);
-    freopen("daemon_errors", "w", stderr);
+    freopen("daemon_errors.log", "w", stderr);
     fflush(stdout);
     setbuf(stderr, NULL);
     setbuf(file, NULL);
